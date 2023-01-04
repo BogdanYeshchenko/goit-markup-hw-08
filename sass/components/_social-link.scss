@@ -1,0 +1,36 @@
+.social-link__box {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: inherit;
+
+  &:hover,
+  &:focus {
+    fill: $main-beckground-color;
+    background-color: $accent-color;
+  }
+}
+
+.social-link__link--light {
+  fill: #afb1b8;
+}
+
+.social-link__link--dark {
+  fill: $main-beckground-color;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link__icons {
+  width: 20px;
+  height: 20px;
+}

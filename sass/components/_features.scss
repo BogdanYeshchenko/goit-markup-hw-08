@@ -1,0 +1,41 @@
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  & > li {
+    width: 100%;
+  }
+}
+
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  height: 120px;
+  background: $team-beckground-color;
+}
+
+.features-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $title-text-color;
+}
+
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $text-color;
+}

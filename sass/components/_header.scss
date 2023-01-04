@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu__box {
+  display: none;
+}
+
+.menu-btn {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+}

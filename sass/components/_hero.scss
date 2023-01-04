@@ -1,0 +1,48 @@
+.conteiner.bg-hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/header-img-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $hero-footer-beckground-color;
+}
+
+.hero h1 {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $main-beckground-color;
+}
+
+.hero-button {
+  display: block;
+  padding: 10px 24px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: $main-beckground-color;
+}
