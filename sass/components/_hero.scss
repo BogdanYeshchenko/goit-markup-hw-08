@@ -1,4 +1,8 @@
 .conteiner.bg-hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
   padding-top: 118px;
   padding-bottom: 118px;
   padding-left: 60px;
@@ -13,10 +17,28 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $hero-footer-beckground-color;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/header-img-tablet.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/header-img-desktop.jpg);
+  }
 }
 
 .hero h1 {
   margin-bottom: 30px;
+
+  width: 360px;
 
   font-weight: 900;
   font-size: 26px;
@@ -26,6 +48,13 @@
   text-transform: uppercase;
 
   color: $main-beckground-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-button {

@@ -2,9 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
 
-  & > li {
-    width: 100%;
+.features > .conteiner {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
+
+.features-list > li {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -29,6 +43,10 @@
   text-transform: uppercase;
 
   color: $title-text-color;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .features-text {

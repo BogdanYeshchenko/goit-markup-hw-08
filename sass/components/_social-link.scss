@@ -14,10 +14,14 @@
   border-radius: 50%;
   background-color: inherit;
 
+  transition: fill $trans-attribute, background-color $trans-attribute;
+
   &:hover,
   &:focus {
     fill: $main-beckground-color;
     background-color: $accent-color;
+
+    transition: fill $trans-attribute, background-color $trans-attribute;
   }
 }
 

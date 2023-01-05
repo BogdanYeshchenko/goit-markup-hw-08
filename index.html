@@ -21,7 +21,7 @@
           <span class="logo__start">Web</span
           ><span class="logo__end">Studio</span>
         </a>
-        <div class="menu__box">
+        <div class="menu-contacts__box">
           <nav>
             <ul class="nav">
               <li>
@@ -506,6 +506,7 @@
             </ul>
           </address>
         </div>
+
         <div class="invite">
           <p class="invite__title">приєднуйтесь</p>
           <ul class="social-link__box">
@@ -560,15 +561,17 @@
           </ul>
         </div>
 
-        <form name="subscribe" autocomplete="on" novalidate>
+        <form name="subscribe" class="subscribe" autocomplete="on" novalidate>
           <div class="subscribe-form">
             <div class="email-sub">
-              <label for="email-subscribe">
-                <span>Підпишіться на розсилку</span>
+              <label class="email-subscribe">
+                <span class="email-subscribe__title"
+                  >Підпишіться на розсилку</span
+                >
                 <input
                   type="email"
                   name="email-subscribe"
-                  id="email-subscribe"
+                  class="email-subscribe__input"
                   placeholder="E-mail"
                 />
               </label>

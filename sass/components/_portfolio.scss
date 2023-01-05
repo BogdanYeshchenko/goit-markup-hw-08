@@ -1,0 +1,156 @@
+.box-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    & > li:nth-child(3) {
+      margin-right: 15px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0px 8px;
+    margin-bottom: 30px;
+  }
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  outline: 4 px solid tomato;
+
+  min-width: 73px;
+  padding: 6px 22px;
+
+  background: $team-beckground-color;
+  border-radius: 4px;
+  border: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+
+  transition: background $trans-attribute, color $trans-attribute,
+    box-shadow $trans-attribute;
+
+  &:hover,
+  &:focus {
+    background: #2196f3;
+    color: $main-beckground-color;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    transition: background $trans-attribute, color $trans-attribute,
+      box-shadow $trans-attribute;
+  }
+}
+
+.box-working {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-list {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  box-shadow: none;
+
+  transition: box-shadow $trans-attribute;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    transition: box-shadow $trans-attribute;
+  }
+}
+
+.working-trump {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.working-trump-box {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(101%);
+
+  transition: transform $trans-attribute;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    transform: translateY(0);
+    transition: transform $trans-attribute;
+  }
+}
+
+.working-trump > img {
+  width: 100%;
+}
+
+.working-trump-text {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  width: calc(100% - 48px);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: $main-beckground-color;
+}
+.person {
+  padding: 20px 24px;
+}
+
+.working-title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $title-text-color;
+}
+
+.working-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
