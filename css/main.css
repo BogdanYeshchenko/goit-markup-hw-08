@@ -462,6 +462,20 @@ header {
   }
 }
 
+.social-link__header {
+  position: relative;
+}
+
+.social-link__header:not(:last-child) a::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  width: 0px;
+  height: 22px;
+}
+
 .conteiner.bg-hero {
   display: flex;
   align-items: center;
