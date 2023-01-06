@@ -26,7 +26,6 @@
 .modal {
   position: relative;
   padding: 40px;
-  max-width: 450px;
 
   left: 50%;
   transform: translateX(-50%);
@@ -47,6 +46,9 @@
     width: 450px;
   }
 
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     width: 528px;
   }
