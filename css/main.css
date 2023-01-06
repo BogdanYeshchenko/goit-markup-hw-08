@@ -253,6 +253,7 @@ header {
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -284,9 +285,35 @@ header {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .menu-contacts__box.is-open {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 736px;
+    padding: 0 40px 48px 40px;
+    background-color: #ffffff;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    margin-bottom: auto;
+  }
+}
+
 .nav {
   display: flex;
   gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    flex-direction: column;
+  }
 }
 
 .nav__link {
@@ -297,6 +324,15 @@ header {
   color: #212121;
   filter: none;
   transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .nav__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
 }
 .nav__link:hover, .nav__link:focus, .nav__link.nav__link--active {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -330,6 +366,31 @@ header {
   fill: #2196f3;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .contacts__icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts > a[href="tel:+380961111111"] {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts > a[href="mailto:info@devstudio.com"] {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
 
 .contacts__link {
   display: flex;
@@ -348,6 +409,12 @@ header {
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (max-width: 767px) {
+  .contacts {
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
@@ -356,6 +423,7 @@ header {
 }
 
 .menu-btn {
+  display: inline-flex;
   padding: 0;
   margin: 0;
   background-color: transparent;
@@ -363,6 +431,33 @@ header {
 }
 @media screen and (min-width: 768px) {
   .menu-btn {
+    display: none;
+  }
+}
+
+.menu-btn .menu-btn__closed {
+  display: none;
+}
+
+.menu-btn.is-open .menu-btn__menu {
+  display: none;
+}
+
+.menu-btn.is-open .menu-btn__closed {
+  display: block;
+}
+
+.social-header {
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .social-header {
     display: none;
   }
 }
@@ -773,6 +868,11 @@ footer {
   color: #ffffff;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscribe {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: auto;
@@ -787,7 +887,7 @@ footer {
 }
 @media screen and (max-width: 1199px) {
   .subscribe-form {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -804,6 +904,8 @@ footer {
 }
 
 .email-subscribe {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   font-weight: 700;
   font-size: 14px;
@@ -813,9 +915,9 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .email-subscribe {
-    display: inline-block;
+    display: inline;
   }
 }
 
@@ -825,7 +927,7 @@ footer {
 }
 
 .email-subscribe__input {
-  width: 100%;
+  max-width: 450px;
   padding: 15px 16px;
   font-weight: 400;
   font-size: 16px;
@@ -851,6 +953,11 @@ footer {
   border: 1px solid #2196f3;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .email-subscribe__input {
+    width: 358px;
+  }
 }
 
 .footer-button {
@@ -1008,11 +1115,12 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 15px;
   opacity: 1;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1020,15 +1128,24 @@ footer {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 450px;
+  position: relative;
   padding: 40px;
+  max-width: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) and (min-height: 609px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

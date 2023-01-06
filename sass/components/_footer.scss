@@ -97,6 +97,9 @@ footer {
 }
 
 .subscribe {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
@@ -109,7 +112,7 @@ footer {
   gap: 20px;
 
   @media screen and (max-width: 1199px) {
-    width: 450px;
+    max-width: 450px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -125,6 +128,8 @@ footer {
 }
 
 .email-subscribe {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 
   font-weight: 700;
@@ -135,8 +140,8 @@ footer {
   text-transform: uppercase;
   color: $main-beckground-color;
 
-  @media screen and (max-width: 1199px) {
-    display: inline-block;
+  @media screen and (min-width: 1200px) {
+    display: inline;
   }
 }
 
@@ -146,7 +151,7 @@ footer {
 }
 
 .email-subscribe__input {
-  width: 100%;
+  max-width: 450px;
   padding: 15px 16px;
 
   font-weight: 400;
@@ -172,6 +177,10 @@ footer {
     outline: none;
 
     transition: border $trans-attribute;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 

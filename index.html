@@ -21,7 +21,7 @@
           <span class="logo__start">Web</span
           ><span class="logo__end">Studio</span>
         </a>
-        <div class="menu-contacts__box">
+        <div class="menu-contacts__box" data-menu>
           <nav>
             <ul class="nav">
               <li>
@@ -49,11 +49,56 @@
               +38 096 111 11 11
             </a>
           </div>
+          <div class="">
+            <ul class="social-header">
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link__header"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link__header"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link__header"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link__header"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <button type="button" class="menu-btn">
-          <svg width="40" height="40">
-            <use class="menu-btn__menu" href="./images/icons.svg#menu"></use>
+        <button
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Кнопка мобільного меню">
             <use class="menu-btn__closed" href="./images/icons.svg#close"></use>
+            <use class="menu-btn__menu" href="./images/icons.svg#menu"></use>
           </svg>
         </button>
       </div>
@@ -678,5 +723,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
