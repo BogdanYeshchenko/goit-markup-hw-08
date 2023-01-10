@@ -151,7 +151,7 @@ nav {
   }
 }
 
-.contacts > a[href="tel:+380961111111"] {
+.contacts a[href="tel:+380961111111"] {
   @media screen and (max-width: 767px) {
     font-weight: 500;
     font-size: 34px;
@@ -161,7 +161,7 @@ nav {
   }
 }
 
-.contacts > a[href="mailto:info@devstudio.com"] {
+.contacts a[href="mailto:info@devstudio.com"] {
   @media screen and (max-width: 767px) {
     font-weight: 500;
     font-size: 24px;

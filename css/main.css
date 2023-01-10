@@ -402,7 +402,7 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  .contacts > a[href="tel:+380961111111"] {
+  .contacts a[href="tel:+380961111111"] {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
@@ -412,7 +412,7 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  .contacts > a[href="mailto:info@devstudio.com"] {
+  .contacts a[href="mailto:info@devstudio.com"] {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
@@ -539,6 +539,8 @@ header {
 @media screen and (min-width: 1200px) {
   .hero.section {
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_lg@1x.jpg);
   }
 }
