@@ -126,7 +126,7 @@ nav {
     background: $accent-color;
     border-radius: 2px;
     @media screen and (min-width: 1200px) {
-      top: 60px;
+      top: 65px;
     }
   }
 }
@@ -191,11 +191,12 @@ nav {
 .contacts {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 10px;
 
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
     margin-bottom: 64px;
+    gap: 32px;
   }
 
   @media screen and (min-width: 1200px) {
