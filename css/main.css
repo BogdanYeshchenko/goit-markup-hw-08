@@ -436,7 +436,7 @@ header {
 .contacts {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 32px;
 }
 @media screen and (max-width: 767px) {
   .contacts {
@@ -1169,6 +1169,7 @@ footer {
 
 .person {
   padding: 20px 24px;
+  height: 100%;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
