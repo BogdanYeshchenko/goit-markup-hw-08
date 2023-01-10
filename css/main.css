@@ -837,6 +837,11 @@ footer {
   background-color: #2f303a;
 }
 
+.footer.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer.conteiner {
   display: flex;
   flex-direction: column;

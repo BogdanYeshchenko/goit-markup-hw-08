@@ -2,6 +2,11 @@ footer {
   background-color: $hero-footer-beckground-color;
 }
 
+.footer.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer.conteiner {
   display: flex;
   flex-direction: column;
