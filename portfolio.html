@@ -21,7 +21,20 @@
           <span class="logo__start">Web</span
           ><span class="logo__end">Studio</span>
         </a>
-        <div class="menu-contacts__box" data-menu>
+        <div class="menu-contacts__box js-menu-container">
+          <button
+            type="button"
+            class="menu-btn menu-btn--close js-close-menu"
+            aria-expanded="false"
+          >
+            <svg width="40" height="40" aria-label="Кнопка мобільного меню">
+              <use
+                class="menu-btn__closed"
+                href="./images/icons.svg#close"
+              ></use>
+            </svg>
+          </button>
+
           <nav>
             <ul class="nav">
               <li>
@@ -51,7 +64,7 @@
           </div>
           <div class="">
             <ul class="social-header">
-              <li>
+              <li class="social-link__header">
                 <a
                   href="#"
                   target="_blank"
@@ -60,7 +73,7 @@
                   >Instagram</a
                 >
               </li>
-              <li>
+              <li class="social-link__header">
                 <a
                   href="#"
                   target="_blank"
@@ -69,7 +82,7 @@
                   >Twitter</a
                 >
               </li>
-              <li>
+              <li class="social-link__header">
                 <a
                   href="#"
                   target="_blank"
@@ -78,7 +91,7 @@
                   >Facebook</a
                 >
               </li>
-              <li>
+              <li class="social-link__header">
                 <a
                   href="#"
                   target="_blank"
@@ -92,12 +105,10 @@
         </div>
         <button
           type="button"
-          class="menu-btn"
+          class="menu-btn js-open-menu"
           aria-expanded="false"
-          data-menu-button
         >
           <svg width="40" height="40" aria-label="Кнопка мобільного меню">
-            <use class="menu-btn__closed" href="./images/icons.svg#close"></use>
             <use class="menu-btn__menu" href="./images/icons.svg#menu"></use>
           </svg>
         </button>
