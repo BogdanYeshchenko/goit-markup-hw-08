@@ -116,7 +116,9 @@
 }
 
 .portfolio-link {
+  display: flex;
   height: 100%;
+  flex-direction: column;
 }
 
 .working-trump > img {
@@ -139,8 +141,7 @@
 }
 .person {
   padding: 20px 24px;
-
-  // height: 100%;
+  flex-grow: 1;
 
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;

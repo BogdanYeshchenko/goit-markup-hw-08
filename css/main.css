@@ -1149,7 +1149,9 @@ footer {
 }
 
 .portfolio-link {
+  display: flex;
   height: 100%;
+  flex-direction: column;
 }
 
 .working-trump > img {
@@ -1170,6 +1172,7 @@ footer {
 
 .person {
   padding: 20px 24px;
+  flex-grow: 1;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
